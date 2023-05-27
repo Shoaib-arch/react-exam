@@ -12,12 +12,12 @@ function App() {
       <Timer/>
       <h1>Polling App</h1>
       <PollDisplay/>
+      <button onClick={UserParticipation()}>Change</button>
       <UserParticipation/>
       <AnotherUserParticipation/>
-      <button onClick={ThankyouMessage()}>Submit</button>
+      <ThankyouMessage/>
       
-      
-     
+    
     </div>
   );
 }
