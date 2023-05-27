@@ -12,8 +12,6 @@ function PollDisplay() {
 
 export default PollDisplay;
 
-
-
 function Question() {
 
   const [choices, setChoices] = useState([
@@ -37,7 +35,7 @@ function Question() {
   return (
     
     <div>
-      <h3 style={{}}>What is your favorite programming language?</h3>
+      <h3 style={{backgroundColor: "lightblue"}}>What is your favorite programming language?</h3>
       <ul>
         {choices.map((choice) => (
           <li key={choice.id}>
