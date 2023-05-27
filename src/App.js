@@ -3,14 +3,20 @@ import './App.css';
 import PollDisplay from './PollDisplay';
 import ThankyouMessage from './ThankyouMessage';
 import UserParticipation from './UserParticipation';
+import Timer from './Timer';
+import AnotherUserParticipation from './AnotherUserParticipation';
 
 function App() {
   return (
     <div>
+      <Timer/>
       <h1>Polling App</h1>
       <PollDisplay/>
-      <button onClick={ UserParticipation}>new User UserParticipation</button>
-      <button onClick={ThankyouMessage}>Submit<Button>
+      <UserParticipation/>
+      <AnotherUserParticipation/>
+      <button onClick={ThankyouMessage()}>Submit</button>
+      
+      
      
     </div>
   );
@@ -18,3 +24,6 @@ function App() {
 // defaulting
 
 export default App;
+
+
+

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-function AnotherUserParticipation() {
+const AnotherUserParticipation = ({ onReset }) => {
   return (
-    <div>AnotherUserParticipation</div>
-  )
-}
+    <div>
+      <button onClick={onReset}>Participate as Another User</button>
+    </div>
+  );
+};
 
-export default AnotherUserParticipation
+export default AnotherUserParticipation;
