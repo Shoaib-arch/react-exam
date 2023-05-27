@@ -1,12 +1,15 @@
 
 import './App.css';
+import PollDisplay from './PollDisplay';
 
 function App() {
   return (
     <div>
-    Hello World!
+      <h1>Polling App</h1>
+      <PollDisplay/>
     </div>
   );
 }
+// defaulting
 
 export default App;
