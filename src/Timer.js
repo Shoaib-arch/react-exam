@@ -15,19 +15,17 @@ const Timer = () => {
   }, []);
 
 
-  const timeUp=()=>{
-    return <h1>Time Up</h1>
-  }
 
   useEffect(() => {
     if (countdown === 0) {
       clearInterval(timer);
-      <timeUp/>
+      
       
       // Perform any actions when the timer reaches 0
     }
   }, [countdown]);
 
+  // conditioning in returning
   return (
     <div>
       {countdown > 0 ? (

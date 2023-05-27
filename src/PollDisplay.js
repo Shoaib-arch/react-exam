@@ -10,7 +10,7 @@ const PollDisplay = () => {
       
   return (
     <div>
-      <h2>Poll display</h2>
+      
       <ul>
         {choices.map((choice) => (
           <li key={choice.id}>
