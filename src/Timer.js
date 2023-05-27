@@ -5,7 +5,7 @@ const Timer = () => {
   const [countdown, setCountdown] = useState(10);
   let timer;
 
-  //Creating the UseEffect
+  
   useEffect(() => {
     timer = setInterval(() => {
       setCountdown(prevCountdown => prevCountdown - 1);
@@ -14,9 +14,29 @@ const Timer = () => {
     return () => clearInterval(timer);
   }, []);
 
- 
 
+  const timeUp=()=>{
+    return <h1>Time Up</h1>
+  }
 
+  useEffect(() => {
+    if (countdown === 0) {
+      clearInterval(timer);
+      <timeUp/>
+      
+      // Perform any actions when the timer reaches 0
+    }
+  }, [countdown]);
+
+  return (
+    <div>
+      {countdown > 0 ? (
+        <h1>{countdown}</h1>
+      ) : (
+        <h1>Time Up</h1>
+      )}
+    </div>
+  );
 };
 
 export default Timer;
